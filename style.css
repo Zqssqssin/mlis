@@ -1,0 +1,33 @@
+body {
+	animation: bgchange 2s infinite;
+	animation-direction: alternate;
+}
+
+.mm-head {
+	text-align: center;
+}
+
+#h-headpls {
+	animation: txtchange 1s infinite;
+	animation-direction: alternate;
+	font-size: 40px;
+	position: absolute;
+	left: 10px;
+	user-select: none;
+}
+
+@keyframes bgchange {
+	from {background-color: darkolivegreen;}
+	to {background-color: darkgreen;}
+}
+
+@keyframes txtchange {
+	from {
+		color: whitesmoke;
+		transform: rotate(0deg);
+	}
+	to {
+		color: greenyellow;
+		transform: rotate(360deg);
+	}
+}
